@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+
+    <Platforms>AnyCPU;x86</Platforms>
+<<<<<<< HEAD
+
+    <Authors>jacksaki</Authors>
+=======
+>>>>>>> 895f3ea5664446e071a5d21b361003bab451a6f0
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DatabaseExtension.SQLite\DatabaseExtension.SQLite.csproj" />
+    <ProjectReference Include="..\DatabaseExtension\DatabaseExtension.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="scott.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

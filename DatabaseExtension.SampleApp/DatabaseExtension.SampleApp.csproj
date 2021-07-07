@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x86</Platforms>
+<<<<<<< HEAD
+    <Authors>jacksaki</Authors>
+=======
+>>>>>>> 895f3ea5664446e071a5d21b361003bab451a6f0
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AvalonEdit" Version="6.1.2.30" />
+    <PackageReference Include="LivetCask" Version="3.2.1" />
+    <PackageReference Include="MahApps.Metro" Version="2.4.7" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.1.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="3.10.0" />
+    <PackageReference Include="Microsoft.NETCore.Runtime.CoreCLR" Version="2.0.8" />
+    <PackageReference Include="System.Text.Json" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DatabaseExtension.ManagedOracle\DatabaseExtension.ManagedOracle.csproj" />
+    <ProjectReference Include="..\DatabaseExtension.MySQL\DatabaseExtension.MySQL.csproj" />
+    <ProjectReference Include="..\DatabaseExtension.PostgreSQL\DatabaseExtension.PostgreSQL.csproj" />
+    <ProjectReference Include="..\DatabaseExtension.SQLite\DatabaseExtension.SQLite.csproj" />
+    <ProjectReference Include="..\DatabaseExtension.SqlServer\DatabaseExtension.SqlServer.csproj" />
+    <ProjectReference Include="..\DatabaseExtension\DatabaseExtension.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Source.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="scott.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
