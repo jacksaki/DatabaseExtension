@@ -4,11 +4,8 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-    <Platforms>AnyCPU;x86</Platforms>
-<<<<<<< HEAD
+    <Platforms>x86</Platforms>
     <Authors>jacksaki</Authors>
-=======
->>>>>>> 895f3ea5664446e071a5d21b361003bab451a6f0
   </PropertyGroup>
 
   <ItemGroup>
