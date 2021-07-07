@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Platforms>AnyCPU;x86</Platforms>
+<<<<<<< HEAD
+    <Authors>jacksaki</Authors>
+    <Company>jacksaki</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+=======
+>>>>>>> 895f3ea5664446e071a5d21b361003bab451a6f0
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="3.21.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DatabaseExtension\DatabaseExtension.csproj" />
+  </ItemGroup>
+
+</Project>
